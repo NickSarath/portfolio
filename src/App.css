@@ -1,28 +1,249 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 930px;
+  margin-top: 20px;
+}
+
+.about h1 {
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #16191a;
+  margin-bottom: 28px;
+}
+
+.tag {
+  height: 26px;
+  border-radius: 3px;
+  padding: 8px 20px 8px 20px;
+  display: inline-block;
+  margin-bottom: 31px;
+}
+
+hr {
+  width: 200%;
+  margin-left: -50%;
+  margin-top: 130px;
+  margin-bottom: 79px;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.hr2 {
+  margin-top: 80px;
+}
+
+.project-hr {
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  opacity: 0.5;
+}
+
+.tag p {
+  margin-top: -3px;
+  padding: 0px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
   text-align: center;
+  color: #ffffff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.spacer {
+  height: 22px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.spacer2 {
+  height: 140px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.longText {
+  font-family: Inconsolata;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.96;
+  letter-spacing: normal;
+  color: #16191a;
+  display: inline-block;
 }
 
-.App-intro {
-  font-size: large;
+.link {
+  font-family: Inconsolata;
+  font-weight: bold;
+  color: #1d8cff;
+  font-size: 16px;
+  border-bottom: solid 1px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.link .a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.mention {
+  font-family: Inconsolata;
+  font-size: 16px;
+  color: #16191a;
+  margin-top: 8px;
+  margin-bottom: 38px;
+}
+
+.mention em {
+  font-family: Poppins;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+
+.projectBlock {
+  display: inline-block;
+  width: 100%;
+}
+
+.project {
+  width: 100%;
+  margin-bottom: 113px;
+}
+
+.previewImages {
+  float: left;
+  width: 33%;
+  cursor: pointer;
+}
+
+
+.description {
+  float: right;
+  text-align: left;
+  width: 64%;
+  margin-top: 37px;
+}
+
+.mention .a:hover, a:visited, a:link, a:active,{
+  text-decoration: none;
+  color: inherit;
+}
+
+.mention a {
+  color: inherit;
+  border-bottom: 1px solid;
+}
+
+.projectTitle {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 800;
+  color: #16191a;
+}
+
+.projectDesc {
+  font-family: Inconsolata;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #16191a;
+}
+
+.projectDesc {
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 780px) {
+  .description {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .previewImages {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+
+  #mainImage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+}
+
+.grow { 
+  transition: all .24s cubic-bezier(0,.5,.51,1); }
+.grow:hover { transform: scale(1.01); }
+
+
+/* About */
+
+.about2 {
+  display: inline-block;
+}
+
+.about2 .about {
+  max-width: 50%;
+  float: left;
+}
+
+.about2 aboutImage {
+  float: right;
+  min-width: 30%;
+}
+
+.about2 .aboutImage img {
+  margin-top: 60px;
+}
+
+.backNav {
+  display: inline-block;
+  margin-bottom: 103px;
+  transition: all .6s cubic-bezier(0,.5,.51,1);
+}
+
+.backNav img {
+  float: left;
+  height: 19px;
+  width: 12px;
+}
+
+.backNav:hover {
+  transform:translate(-7px);
+}
+
+.backNav h3 {
+  float: right;
+  color: #1d8cff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: -3px;
+  margin-left: 10px;
+  color: #1d8cff
 }

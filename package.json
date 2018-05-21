@@ -2,7 +2,7 @@
   "name": "nicksarath",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://NickSarath.github.io/portfolio",
+  "homepage": "http://nicksarath.github.io/build",
   "dependencies": {
     "react": "^16.3.2",
     "react-addons-css-transition-group": "^15.6.2",

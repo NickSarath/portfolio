@@ -75,12 +75,12 @@ class App extends Component {
           >
             <section className="about">
               <Tag color="#1d8cff">ABOUT</Tag>
-              <h1>Povchhadarith Sarath</h1>
+              <h2>Povchhadarith Sarath</h2>
               <LongText>{summary} <Link url="/about">Learn More</Link></LongText>
               <hr />
             </section>
             <section className="projects">
-              <Tag color="#34393f">FAVORITE WORK & PROJECTS</Tag>
+              <Tag color="#34393f">WORK & PROJECTS</Tag>
               <div className="spacer"></div>
               {projects.map((project) =>
                 <Project key={project.title}

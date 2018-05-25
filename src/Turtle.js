@@ -21,7 +21,7 @@ const Turtle = () =>
         <Video src="https://player.vimeo.com/video/257406782?color=54EED9&title=0&byline=0&portrait=0" />
         <div className="spacer0"></div>
         
-        <h2>{turtle.projectName}</h2>
+        <h2 id="largeTitle">{turtle.projectName}</h2>
         <h3>{turtle.title}</h3>
         <LongText>{turtle.date}</LongText>
         <div className="spacer0"></div>
@@ -98,7 +98,7 @@ const Turtle = () =>
         <div className="spacer"></div>
         <h1>{turtle.header7}</h1>
         <LongText>{turtle.text7}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* ✨ */}
         <img src={turtle.img8_1} className="appImage lessWide" />
@@ -114,64 +114,71 @@ const Turtle = () =>
         <div className="spacer"></div>
         <h1>{turtle.header9.substr(0,24)}<span className="italic">{turtle.header9.substr(24)}</span></h1>
         <LongText>{turtle.text9}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Messaging */}
         <img src={turtle.img10} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header10}</h1>
         <LongText>{turtle.text10}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Mitigating */}
         <img src={turtle.img11} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header11}</h1>
         <LongText>{turtle.text11}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Another */}
         <img src={turtle.img12} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header12}</h1>
         <LongText>{turtle.text12}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* A Sense */}
         <img src={turtle.img13} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header13}</h1>
         <LongText>{turtle.text13}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Moving */}
         <img src={turtle.img14_1} className="appImage" />
         <div className="spacer"></div>
         <img src={turtle.img14_2} className="appImage" />
         <div className="spacer"></div>
-        <h1>{turtle.header10}</h1>
-        <LongText>{turtle.text10}</LongText>
-        <div className="spacer2"></div>
+        <h1>{turtle.header14}</h1>
+        <LongText>{turtle.text14}</LongText>
+        <div className="spacer"></div>
 
         {/* My Thoughts */}
         <Video src="https://player.vimeo.com/video/271534368?color=54EED9&title=0&byline=0&portrait=0" />
         <div className="spacer"></div>
         <h1>{turtle.header15}</h1>
         <LongText>{turtle.text15}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Seamless */}
         <img src={turtle.img16} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header16}</h1>
         <LongText>{turtle.text16}</LongText>
-        <div className="spacer2"></div>
+        <div className="spacer"></div>
 
         {/* Distributing */}
         <img src={turtle.img17} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header17}</h1>
         <LongText>{turtle.text17}</LongText>
+        <div className="spacer"></div>
+
+        {/* Iterating */}
+        <img src={turtle.img18} className="appImage" />
+        <div className="spacer"></div>
+        <h1>{turtle.header18}</h1>
+        <LongText>{turtle.text18}</LongText>
         <div className="spacer2"></div>
 
       </section>

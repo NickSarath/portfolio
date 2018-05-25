@@ -116,21 +116,20 @@ const turtle = {
   header14: "Moving forward to prototype and development",
   text14: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
 
-  img15: 'img15.png',
   header15: "My thoughts from testing the initial builds",
   text15: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
 
-  img15: 'img15.png',
-  header15: "Seamless onboarding flow",
-  text15: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
-
   img16: 'img16.png',
-  header16: "Distributing the app privately to early testers",
+  header16: "Seamless onboarding flow",
   text16: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
 
   img17: 'img17.png',
-  header17: "Iterating the app based on initial feedbacks from testers",
+  header17: "Distributing the app privately to early testers",
   text17: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img18: 'img18.png',
+  header18: "Iterating the app based on initial feedbacks from testers",
+  text18: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
   
 
 }

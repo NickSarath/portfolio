@@ -1,7 +1,7 @@
 
 
 //Homepage bio
-const summary = "I am a multifunctional product designer currently based in the Washington, D.C. area. I’m currently the founder and CEO of a company called Turtle Labs. My team and I developed an award winning app called Turtle.";
+const summary = "I am a multifunctional product designer currently based in the Washington, D.C. area. I’m currently the founder and CEO of a company called Turtle Labs. My team and I developed an award winning app called Turtle. Strong sense of design theory and typography. Very positive attitude with an empathetic.";
 
 // Homepage Projects List
 const projects = [
@@ -70,6 +70,10 @@ const turtle = {
   header4: "What Turtle feels like",
   img4: "img4.png",
 
+  img4_5: 'img4_5.png',
+  header4_5: "First look at Turtle",
+  text4_5: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
   img5: "img5.png",
   header5: "Use of playful colors, icons, and font",
   text5: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
@@ -84,12 +88,50 @@ const turtle = {
 
   img8_1: 'img8_1.png',
   img8_2: 'img8_2.png',
-  header8: "🍆🤤✨😳",
+  header8: "Inbox and Revealed",
   text8: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching.",
 
   img9: 'img9.png',
-  header9: "Attention to time left",
+  header9: "Someone messaging me vs me messaging someone",
   text9: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img10: 'img10.png',
+  header10: "Messaging page",
+  text10: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img11: 'img11.png',
+  header11: "Mitigating the feeling of stranger danger",
+  text11: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img12: 'img12.png',
+  header12: "Another iteration of anonymous hints",
+  text12: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img13: 'img13.png',
+  header13: "A sense of who their “anonymous” sender is",
+  text13: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img14_1: 'img14_1.png',
+  img14_2: 'img14_2.png',
+  header14: "Moving forward to prototype and development",
+  text14: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img15: 'img15.png',
+  header15: "My thoughts from testing the initial builds",
+  text15: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img15: 'img15.png',
+  header15: "Seamless onboarding flow",
+  text15: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img16: 'img16.png',
+  header16: "Distributing the app privately to early testers",
+  text16: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+
+  img17: 'img17.png',
+  header17: "Iterating the app based on initial feedbacks from testers",
+  text17: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing.",
+  
 
 }
 

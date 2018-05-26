@@ -218,6 +218,79 @@ hr {
   transition: all .24s cubic-bezier(0,.5,.51,1); }
 .grow:hover { transform: scale(1.02); }
 
+.social {
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.socialLinks {
+  margin-top: -20px;
+}
+
+.socialLinks p {
+  font-family: Inconsolata;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #16191a;
+}
+
+.row {
+  float: left;
+  width: 70%;
+}
+
+.email {
+  float: right;
+}
+
+.email .emailSub {
+  text-align: right;
+  font-family: Inconsolata;
+  font-size: 15px;
+  font-weight: bold;
+  color: #16191a;
+}
+
+.email .actualEmail {
+  text-align: right;
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 800;
+  color: #16191a;
+  letter-spacing: 0.3px;
+  margin-top: -9px;
+}
+
+.socialLinks p .a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.logos {
+  width: 110%;
+  display: block;
+}
+
+.logo {
+  margin-bottom: 15px;
+  margin-bottom: 20px;
+  width: 70%;
+  max-width: 160px;
+}
+
+#logo1 {
+  width: 90%;
+}
+
+#logo2 {
+  width: 100%;
+  margin-top: -3px;
+}
+
+#logo3 {
+  margin-top: -5px;
+}
 
 /* About */
 
@@ -239,6 +312,10 @@ hr {
   margin-top: 60px;
 }
 
+.twemoji {
+  width: 20px;
+}
+
 .backNav {
   display: inline-block;
   margin-bottom: 103px;
@@ -257,6 +334,32 @@ hr {
   transform:translate(-7px);
 }
 
+.profile {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.profileImage {
+  float:left;
+  height: 60px;
+}
+
+.profileDesc {
+  margin-top: 4px;
+  float: left;
+  margin-left: 20px;
+}
+
+.profileDesc h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profileDesc h3 {
+  margin-top: -18px;
+  font-size: 16px;
+  font-weight: normal;
+}
 
 
 .backNav h3 {
@@ -317,7 +420,6 @@ hr {
   margin-top: 30px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 33%;
   max-width: 33%;
@@ -362,6 +464,10 @@ hr {
     float: left;
   }
 
+  .socialLinks {
+    width: 50%;
+  }
+
 }
 
 .videoContainer {
@@ -376,7 +482,6 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.5em;
 }
 
 .appImage {
@@ -391,7 +496,10 @@ hr {
 
 .lessWide {
   width: 75%;
-  margin-left: 12%;
+}
+
+.lessWide {
+  width: 85%;
 }
 
 .shadow {
@@ -408,6 +516,8 @@ hr {
   transition: 1000ms;
 }
 
+
+/* Thumbs up/down
 #iconbox {
   width: 100%;
 }
@@ -432,6 +542,15 @@ hr {
 #icon1 img, #icon2 img {
   width: 30px;
   margin-left: 20px;
+}
+*/
+
+#blue {
+  color: #30e1c5;
+}
+
+#red {
+  color: #f83f4c;
 }
 
 #title {

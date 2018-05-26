@@ -7,6 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Turtle from './Turtle';
 import LongText from './LongText';
 import BackNav from './BackNav';
+import Fleet from './Fleet';
 
 const Main = () => (
   <main>
@@ -14,6 +15,7 @@ const Main = () => (
       <Route exact path='/' component={App} />
       <Route path='/about' component={About} />
       <Route path='/turtle' component={Turtle} />
+      <Route path='/fleet' component={Fleet} />
     </Switch>
   </main>
 )
@@ -80,7 +82,7 @@ class App extends Component {
               <hr />
             </section>
             <section className="projects">
-              <Tag color="#34393f">WORK & PROJECTS</Tag>
+              <Tag color="#b5c7c7">WORK & PROJECTS</Tag>
               <div className="spacer"></div>
               {projects.map((project) =>
                 <Project key={project.title}
@@ -103,12 +105,34 @@ class App extends Component {
               <Mention><em>Featured as Product of the day</em> on <a href="//www.producthunt.com/@nicksarath">ProductHunt</a> twice.</Mention>
               <Mention><em>18,000</em> shot views on <a href="//dribbble.com/nicksarath">Dribbble</a>.</Mention>
               <Mention><em>Covered by</em> <a href="https://techcrunch.com/2017/12/07/phonewagon-raises-1-2m-to-track-when-marketing-campaigns-lead-to-phone-calls/">TechCrunch</a> and <a href="http://www.businessinsider.com/turtle-is-a-new-take-on-chat-for-gen-z-2017-12">Business Insider</a>.</Mention>
-              <hr className="hr2" />
+              <hr />
             </section>
-            
+            <section className="social">
+              <Tag color="#9143ff">SOCIAL LINKS</Tag>
+              <div class="socialLinks">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <a href="//dribbble.com/nicksarath"><p>Dribbble</p></a>
+                </div>
+                  <div class="col-sm-3">
+                   <a href="//www.youtube.com/channel/UCA779NyWpALxp3Lh_2rOHiw"><p>YouTube</p></a>
+                </div>
+                  <div class="col-sm-3">
+                    <a href="//twitter.com/_nicksarath"><p>Twitter</p></a>
+                </div>
+                  <div class="col-sm-3">
+                    <a href="//www.instagram.com/nicksarath"><p>Instagram</p></a>
+                </div>
+                </div>
+              </div>
+              <div class="email">
+                  <p class="emailSub">Email me at</p>
+                  <p class="actualEmail">nick@turtle.lol</p>
+                </div>
+            </section>
+            <div className="spacer"></div>
           </ReactCSSTransitionGroup>
         </div>
-        <div className="spacer2"></div>
       </div>
     );
   }

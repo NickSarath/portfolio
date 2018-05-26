@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { turtle } from './projects.js';
+import { turtle, logos, people } from './projects.js';
 
 import LongText from './LongText';
 import BackNav from './BackNav';
 import Video from './Video';
+import Profile from './Profile';
 
 const Turtle = () =>
   <ReactCSSTransitionGroup
@@ -20,7 +21,7 @@ const Turtle = () =>
       <section className="about">
         <Video src="https://player.vimeo.com/video/257406782?color=54EED9&title=0&byline=0&portrait=0" />
         <div className="spacer0"></div>
-        
+
         <h2 id="largeTitle">{turtle.projectName}</h2>
         <h3>{turtle.title}</h3>
         <LongText>{turtle.date}</LongText>
@@ -31,7 +32,7 @@ const Turtle = () =>
         <div className="spacer"></div>
         <hr className="hr3" />
         <div className="spacer"></div>
-        
+
         {/* New Approach*/}
         <img src={turtle.img1} className="appImage shadow" />
         <div className="spacer"></div>
@@ -40,7 +41,7 @@ const Turtle = () =>
         <div className="spacer"></div>
         <hr className="hr3" />
         <div className="spacer"></div>
-        
+
         {/* Existing Apps */}
         <img src={turtle.img2} className="appImage extraWide" />
         <div className="spacer"></div>
@@ -51,22 +52,12 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* What a typical anonymous app feels like */}
-        <div id="iconbox">
-          <h1 id="texts" className="icon-line">{turtle.header3}</h1>
-          <div id="icon1">
-            <img src="thumb-down-button.png" />
-          </div>
-        </div>
+        <h1 id="red">{turtle.header3}</h1>
         <img src={turtle.img3} className="appImage" />
         <div className="spacer"></div>
 
         {/* What Turtle feels like */}
-        <div id="iconbox">
-          <h1 id="texts" className="icon-line">{turtle.header4}</h1>
-          <div id="icon2">
-            <img src="thumb-up-button.png" />
-          </div>
-        </div>
+        <h1 id="blue">{turtle.header4}</h1>
         <img src={turtle.img4} className="appImage" />
         <div className="spacer"></div>
         <hr className="hr3" />
@@ -78,7 +69,7 @@ const Turtle = () =>
         <h1>{turtle.header4_5}</h1>
         <LongText>{turtle.text4_5}</LongText>
         <div className="spacer"></div>
-        
+
         {/* Use of Playful */}
         <img src={turtle.img5} className="appImage lessWide shadow" />
         <div className="spacer"></div>
@@ -92,7 +83,7 @@ const Turtle = () =>
         <h1>{turtle.header6}</h1>
         <LongText>{turtle.text6}</LongText>
         <div className="spacer"></div>
-        
+
         {/* Establishing */}
         <img src={turtle.img7} className="appImage" />
         <div className="spacer"></div>
@@ -112,7 +103,7 @@ const Turtle = () =>
         {/* Someone */}
         <img src={turtle.img9} className="appImage" />
         <div className="spacer"></div>
-        <h1>{turtle.header9.substr(0,24)}<span className="italic">{turtle.header9.substr(24)}</span></h1>
+        <h1>{turtle.header9.substr(0, 24)}<span className="italic">{turtle.header9.substr(24)}</span></h1>
         <LongText>{turtle.text9}</LongText>
         <div className="spacer"></div>
 
@@ -151,7 +142,7 @@ const Turtle = () =>
         <div className="spacer"></div>
         <h1>{turtle.header14}</h1>
         <LongText>{turtle.text14}</LongText>
-        <div className="spacer"></div>
+        <div className="spacer2"></div>
 
         {/* My Thoughts */}
         <Video src="https://player.vimeo.com/video/271534368?color=54EED9&title=0&byline=0&portrait=0" />
@@ -175,14 +166,70 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* Iterating */}
-        <img src={turtle.img18} className="appImage" />
+        <img src={turtle.img18} className="appImage lessWide2" />
         <div className="spacer"></div>
         <h1>{turtle.header18}</h1>
         <LongText>{turtle.text18}</LongText>
         <div className="spacer2"></div>
 
+        {/* User Photos */}
+        <img src={turtle.img19} className="appImage" />
+        <div className="spacer"></div>
+        <h1>{turtle.header19}</h1>
+        <LongText>{turtle.text19}</LongText>
+        <div className="spacer"></div>
+
+        {/* Experimenting */}
+        <img src={turtle.img20} className="appImage" />
+        <div className="spacer"></div>
+        <h1>{turtle.header20}</h1>
+        <LongText>{turtle.text20}</LongText>
+        <div className="spacer"></div>
+
+        {/* Days */}
+        <img src={turtle.img21} className="appImage" />
+        <div className="spacer"></div>
+        <h1>{turtle.header21}</h1>
+        <LongText>{turtle.text21}</LongText>
+        <div className="spacer"></div>
+
+        {/* Overall Experience */}
+        <img src={turtle.img22} className="appImage" />
+        <div className="spacer"></div>
+        <h1>{turtle.header22}</h1>
+        <LongText>{turtle.text22}</LongText>
+        <div className="spacer"></div>
+
+        {/* Credits */}
+        <h1>{turtle.header23}</h1>
+        <LongText>{turtle.text23}</LongText>
+        <div>
+          <div className="spacer0"></div>
+          <div className="row logos">
+            <div className="col-sm-6 col-md-3 col-6">
+              <img id="logo1" src={logos.logo1} className="logo" />
+            </div>
+            <div className="col-sm-6 col-md-3 col-6">
+              <img id="logo2" src={logos.logo2} className="logo" />
+            </div>
+            <div className="col-sm-6 col-md-3 col-6">
+              <img id="logo3" src={logos.logo3} className="logo" />
+            </div>
+            <div className="col-sm-6 col-md-3 col-6">
+              <img src={logos.logo4} className="logo" />
+            </div>
+          </div>
+          <div className="spacer2"></div>
+          <div className="spacer0"></div>
+        </div>
+
+        {people.map((person) =>
+          <Profile person={person} />
+        )}
+
+        <div className="spacer0"></div>
       </section>
     </div>
   </ReactCSSTransitionGroup>
 
-  export default Turtle;
+export default Turtle;

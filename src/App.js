@@ -8,6 +8,9 @@ import Turtle from './Turtle';
 import LongText from './LongText';
 import BackNav from './BackNav';
 import Fleet from './Fleet';
+import StarkLabs from './StarkLabs';
+import Stories from './Stories';
+import Header from './Header'
 
 const Main = () => (
   <main>
@@ -16,6 +19,8 @@ const Main = () => (
       <Route path='/about' component={About} />
       <Route path='/turtle' component={Turtle} />
       <Route path='/fleet' component={Fleet} />
+      <Route path='/starklabs' component={StarkLabs} />
+      <Route path='/stories' component={Stories} />
     </Switch>
   </main>
 )
@@ -30,9 +35,9 @@ class About extends Component {
         transitionAppear={true}
         transitionAppearTimeout={1000}
       >
+      <Header>Bio</Header>
         <div className="container projectPage">
           <div className="spacer"></div>
-          <BackNav />
           <div className="about2">
             <section className="about">
               <h1>About</h1>
@@ -66,7 +71,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="container topSpace">
           <div className="spacer"></div>
           <ReactCSSTransitionGroup
             transitionName="bt"
@@ -78,56 +83,50 @@ class App extends Component {
             <section className="about">
               <Tag color="#1d8cff">ABOUT</Tag>
               <h2>Povchhadarith Sarath</h2>
-              <LongText>{summary} <Link url="/about">Learn More</Link></LongText>
+              <LongText>{summary}</LongText>
               <hr />
             </section>
             <section className="projects">
               <Tag color="#b5c7c7">WORK & PROJECTS</Tag>
               <div className="spacer"></div>
               {projects.map((project) =>
-                <Project key={project.title}
-                  img1={project.img1}
-                  img2={project.img2}
-                  title={project.title}
-                  desc={project.description}
-                  url={project.url}
-                />
+                <Project project={project}/>
               )}
-              <hr />
+              <div class="spacer2" />
             </section>
             <section className="mentions">
               <Tag color="#f7b021">NOTABLE MENTIONS</Tag>
               <Mention><em>Lead a team of 6</em> very talented people for over a year.</Mention>
               <Mention><em>Obtained over 4,000</em> users within 3 days without spending money on marketing.</Mention>
               <Mention><em>Top 100 Charts</em> on the social network category of the App Store.</Mention>
-              <Mention><em>Over 100</em> ratings and reviews on the <a href="//itunes.apple.com/us/app/turtle-chat-anonymously/id1313518475">App Store.</a></Mention>
+              <Mention><em>Over 100</em> ratings and reviews on the <a href="//itunes.apple.com/us/app/turtle-chat-anonymously/id1313518475?mt=8">App Store.</a></Mention>
               <Mention><em>Made it to the Trending page</em> on the App Store.</Mention>
-              <Mention><em>Featured as Product of the day</em> on <a href="//www.producthunt.com/@nicksarath">ProductHunt</a> twice.</Mention>
+              <Mention><em>Featured as Product of the day</em> on <a href="//www.producthunt.com/@nicksarath">ProductHunt twice</a>.</Mention>
               <Mention><em>18,000</em> shot views on <a href="//dribbble.com/nicksarath">Dribbble</a>.</Mention>
               <Mention><em>Covered by</em> <a href="https://techcrunch.com/2017/12/07/phonewagon-raises-1-2m-to-track-when-marketing-campaigns-lead-to-phone-calls/">TechCrunch</a> and <a href="http://www.businessinsider.com/turtle-is-a-new-take-on-chat-for-gen-z-2017-12">Business Insider</a>.</Mention>
               <hr />
             </section>
             <section className="social">
               <Tag color="#9143ff">SOCIAL LINKS</Tag>
-              <div class="socialLinks">
-                <div class="row">
-                  <div class="col-sm-3">
+              <div className="socialLinks">
+                <div className="row2">
+                  <div className="col-sm-3">
                     <a href="//dribbble.com/nicksarath"><p>Dribbble</p></a>
                 </div>
-                  <div class="col-sm-3">
+                  <div className="col-sm-3">
                    <a href="//www.youtube.com/channel/UCA779NyWpALxp3Lh_2rOHiw"><p>YouTube</p></a>
                 </div>
-                  <div class="col-sm-3">
+                  <div className="col-sm-3">
                     <a href="//twitter.com/_nicksarath"><p>Twitter</p></a>
                 </div>
-                  <div class="col-sm-3">
+                  <div className="col-sm-3">
                     <a href="//www.instagram.com/nicksarath"><p>Instagram</p></a>
                 </div>
                 </div>
               </div>
-              <div class="email">
-                  <p class="emailSub">Email me at</p>
-                  <p class="actualEmail">nick@turtle.lol</p>
+              <div className="email">
+                  <p className="emailSub">Email me at</p>
+                  <p className="actualEmail">nick@turtle.lol</p>
                 </div>
             </section>
             <div className="spacer"></div>
@@ -141,7 +140,7 @@ class App extends Component {
 
 
 const ImageGrid = ({ }) =>
-  <div className="row">
+  <div className="row1">
     <div className="column">
       <img src={about.img1} />
       <img src={about.img4} />
@@ -178,7 +177,7 @@ const Link = ({ url, children }) =>
     <div className="forwardNav">
 
       <h4>Learn More</h4>
-      <img src="right.png" />
+      <img src="/right.png" />
 
     </div>
   </a>
@@ -204,15 +203,15 @@ const PreviewImages = ({ img1, img2, url }) => {
   );
 }
 
-const Project = ({ img1, img2, title, desc, url }) =>
+const Project = ({ project }) =>
   <div>
     <div className="projectBlock">
       <div className="project">
-        <PreviewImages img1={img1} img2={img2} url={url} />
+        <PreviewImages img1={project.img1} img2={project.img2} url={project.url ? project.url : "#"} />
         <div className="description">
-          <h1 className="projectTitle">{title}</h1>
-          <p className="projectDesc">{desc}</p>
-          <Link url={url}>Learn More</Link>
+          <h1 className="projectTitle">{project.title}</h1>
+          <p className="projectDesc">{project.description}</p>
+          {project.url ? <Link url={project.url}>Learn More</Link> : <p className="comingSoon">Case Study Coming Soon</p>}
         </div>
       </div>
 

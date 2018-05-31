@@ -6,6 +6,7 @@ import LongText from './LongText';
 import BackNav from './BackNav';
 import Video from './Video';
 import Profile from './Profile';
+import Header from './Header';
 
 const Turtle = () =>
   <ReactCSSTransitionGroup
@@ -15,9 +16,9 @@ const Turtle = () =>
     transitionAppear={true}
     transitionAppearTimeout={1000}
   >
+  <Header>{turtle.projectName}</Header>
     <div className="container projectPage">
       <div className="spacer"></div>
-      <BackNav />
       <section className="about">
         <Video src="https://player.vimeo.com/video/257406782?color=54EED9&title=0&byline=0&portrait=0" />
         <div className="spacer0"></div>
@@ -28,7 +29,7 @@ const Turtle = () =>
         <div className="spacer0"></div>
         <LongText>{turtle.description}</LongText>
         <div className="spacer0"></div>
-        <a href="#"><img className="appStore grow" src={turtle.appImg} /></a>
+        <a href="//itunes.apple.com/us/app/turtle-chat-anonymously/id1313518475?mt=8"><img className="appStore grow" src={turtle.appImg} /></a>
         <div className="spacer"></div>
         <hr className="hr3" />
         <div className="spacer"></div>
@@ -216,11 +217,10 @@ const Turtle = () =>
               <img id="logo3" src={logos.logo3} className="logo" />
             </div>
             <div className="col-sm-6 col-md-3 col-6">
-              <img src={logos.logo4} className="logo" />
+              <img id="logo4" src={logos.logo4} className="logo" />
             </div>
           </div>
-          <div className="spacer2"></div>
-          <div className="spacer0"></div>
+          <div className="spacer"></div>
         </div>
 
         {people.map((person) =>

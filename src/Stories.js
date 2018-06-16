@@ -25,7 +25,7 @@ const Stories = () =>
 
         <h2 id="largeTitle">{stories.projectName}</h2>
         <h3>{stories.title}</h3>
-        <LongText>{stories.date}</LongText>
+        <LongText bold>{stories.date}</LongText>
         <div className="spacer0"></div>
         <LongText>{stories.description}</LongText>
         <hr />

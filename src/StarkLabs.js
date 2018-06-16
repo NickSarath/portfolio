@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { starklabs } from './projects.js';
 
@@ -20,12 +20,12 @@ const StarkLabs = () =>
     <div className="container projectPage">
       <div className="spacer"></div>
       <section className="about">
-        <img src={starklabs.header} className="appImage lessWide2" />
+        <img src={starklabs.header} className="appImage" />
         <div className="spacer0"></div>
 
         <h2 id="largeTitle">{starklabs.projectName}</h2>
         <h3>{starklabs.title}</h3>
-        <LongText>{starklabs.date}</LongText>
+        <LongText bold>{starklabs.date}</LongText>
         <div className="spacer0"></div>
         <LongText>{starklabs.description}</LongText>
         <div className="spacer0"></div>

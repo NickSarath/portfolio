@@ -25,7 +25,7 @@ const Turtle = () =>
 
         <h2 id="largeTitle">{turtle.projectName}</h2>
         <h3>{turtle.title}</h3>
-        <LongText>{turtle.date}</LongText>
+        <LongText bold>{turtle.date}</LongText>
         <div className="spacer0"></div>
         <LongText>{turtle.description}</LongText>
         <div className="spacer0"></div>

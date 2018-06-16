@@ -1,7 +1,7 @@
 import React from 'react';
 
-const LongText = ({ children }) =>
-  <div className="longText">
+const LongText = ({ children, bold }) =>
+  <div id={bold && "bold"}className="longText">
     {children}
   </div>
 

@@ -25,7 +25,7 @@ const Fleet = () =>
 
         <h2 id="largeTitle">{fleet.projectName}</h2>
         <h3>{fleet.title}</h3>
-        <LongText>{fleet.date}</LongText>
+        <LongText bold>{fleet.date}</LongText>
         <div className="spacer0"></div>
         <LongText>{fleet.description}</LongText>
         <hr />

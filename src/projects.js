@@ -48,16 +48,16 @@ const projects = [
 
 // About Page
 const about = {
-  mainImg: "http://via.placeholder.com/260x320/b6bfbf",
-  summary: "I'm a Junior at Cornell studying Information Science. I previously studied business, but then realized banking wasn't the move. I got into product design since I was interested in behavioral economics and art, and the combinations of both fields led me here. I've previously worked at Facebook, Intuit, Function of Beauty, startups around Dallas, and freelancing.",
-  passion: "Passion for experience design, with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Very positive attitude with an empathetic and holistic view.",
-  friends: "I've gotten to know a bunch of awesome designers the past few years. I've learned a lot from them after working with them and maybe having a drink or two. I'm incredibly excited to learn and grow with them as we become the future of the tech industry.",
-  img1: "http://via.placeholder.com/190x162/b6bfbf",
-  img2: "http://via.placeholder.com/190x215/b6bfbf",
-  img3: "http://via.placeholder.com/190x162/b6bfbf",
-  img4: "http://via.placeholder.com/190x215/b6bfbf",
-  img5: "http://via.placeholder.com/190x162/b6bfbf",
-  img6: "http://via.placeholder.com/190x215/b6bfbf",
+  mainImg: "/me.png",
+  myStart: "I became interested in Product Design over three years ago. I was initially learning web development and I quickly discovered my passion for CSS and front end development. After finding my love for design, I slowly pivoted towards that area of expertise. I quickly gained experience by starting off with freelance design work. It eventually grew to long term contracts and eventually a few job offers from various technology startups. ",
+  details: "I believe being product driven is the best way to build a successful company. When your product wins, your users win. When your users win, your company wins. Your digital product is the only interaction people will have with you as a company, so I believe it is essential to do everything you can to refine the interaction. Refining the smallest details is something I value. I believe that details matter because the slightest details are what speaks to the user’s emotions. This is the mindset I have when I approach every project. I believe it is my goal to touch the user’s emotions through digital interactions. ",
+  friends: "I’ve had the privilege of meeting some amazing designers, developers, and managers the past few years who all come from very amazing areas of expertise. I would not be where I am today without their help and guidance. I’ve learned a lot from working with them and I wanted to honor that. Feel free to reach out to me if you’re interested in having me setting up an intro for you.",
+  img1: "monkey.png",
+  img2: "stripe.png",
+  img3: "google.png",
+  img4: "ubisoft.png",
+  img5: "",
+  img6: "facebook.png",
 }
 
 
@@ -67,16 +67,16 @@ const turtle = {
   projectName: "Turtle",
   title: "Founder & CEO",
   date: "March 2017 to Present",
-  description: "Turtle is a social iOS app that takes a new approach to anonymous social networking. Turtle is an anonymous messaging app that lets users start conversations with each other while staying anonymous for a period of 3 days. After 3 days, the user who began the conversation will be revealed to the other user. Turtle lets you start conversations with people without having that fear of instant judgement or implicit bias. Turtle is currently operating under Turtle Labs LLC, which is a company I founded over a year ago along with 6 other people on my team. My role as the CEO of Turtle included creative responsibilities for all UI, UX, video directing, prototyping, and art direction.",
+  description: "Turtle is an anonymous messaging app that lets users start conversations with each other while staying anonymous for three days. After three days, the user who began the conversation will be revealed to the other user. Turtle lets you start conversations with people without having that fear of instant judgment or implicit bias. Turtle is currently operating under Turtle Labs LLC, which is a company I founded over a year ago along with six other people on my team. My role as the CEO of Turtle included creative responsibilities for all UI, UX, video directing, prototyping, and art direction.",
   appImg: '/app.png',
 
   img1: "/turtle/img1.png",
   header1: "Taking a new approach to anonymous social networking",
-  text1: "When I first came up with the idea for Turtle, I wasn’t sure if there was already an anonymous app that specifically tailored towards my idea. I took time to conduct very thorough research of existing anonymous apps to see if there’s already been attempts at my idea of temporary anonymity. In my findings, I stumbled upon a lot of anonymous apps, but none that revolved specifically the idea of temporary anonymity. The most popular anonymous apps I found were all in the form of public forums, not private messaging. Additionally, they were functioning with permanent anonymity. ",
+  text1: "When I first came up with the idea for Turtle, I wasn’t sure if there was already an anonymous app that specifically tailored towards my idea. I took time to conduct extensive research of existing anonymous apps to see if there have already been attempts at my concept of temporary anonymity. In my findings, I stumbled upon a lot of anonymous apps, but none that revolved the idea of temporary anonymity explicitly. The most popular anonymous apps I found were all in the form of public forums, not private messaging. Additionally, they were functioning with permanent anonymity.",
 
   img2: "/turtle/img2.png",
-  header2: "Existing apps have formats that are condusive to abuse",
-  text2: "Anonymous apps are very controversial due to their lack of accountability and filtering. The most popular anonymous apps all follow very identical concepts and layout. From what I found, most anonymous apps are following a layout style of a public forum and feed which can cause abuse since it allows people the ability to publicly make abusive comments without the fear of facing scrutiny for what they say. This is something I wanted to avoid during the development and design of Turtle.",
+  header2: "Existing apps have formats that are conducive to abuse",
+  text2: "Anonymous apps are very controversial due to their lack of accountability and filtering. The most popular anonymous apps all follow very similar concepts and layout. From what I found, most anonymous apps are following a layout style of a public forum and feed which can cause abuse since it allows people the ability to publicly make abusive comments without the fear of facing scrutiny for what they say. This toxic environment is something I wanted to avoid the development and design of Turtle.",
 
   header3: "What a typical anonymous app feels like",
   img3: "/turtle/img3.png",
@@ -90,7 +90,7 @@ const turtle = {
 
   img5: "/turtle/img5.png",
   header5: "Use of playful colors, icons, and font",
-  text5: "I wanted Turtle to be playful and relatable to the teenagers ranging from middle school to high school. I used a playful color palette to enhance the idea of fun and comfort. The rounded Nunito fonts were used to give users the impression that the conversations to be had in the app should not be too serious. Lastly, the animal icons give each anonymous user a temporary name and icon until the three days are up.",
+  text5: "I wanted Turtle to be playful and relatable to the teenagers ranging from middle school to high school. I used a playful color palette to enhance the idea of fun and comfort. The rounded Nunito fonts were used to give users the impression that the conversations to be had in the app should not be too serious. Lastly, the animal icons provide each anonymous user a temporary name and symbol until the three days are up.",
 
   img6: '/turtle/img6.png',
   header6: "Connecting with the targeted age group",
@@ -103,19 +103,19 @@ const turtle = {
   img8_1: '/turtle/img8_1.png',
   img8_2: '/turtle/img8_2.png',
   header8: "Inbox and Revealed",
-  text8: "It was essential to separate the anonymous users from the revealed users. I decided it was best to create separate pages using a tab switch which users can intuitively slide back and forth to differentiate between who’s anonymous and who’s been revealed.",
+  text8: "Separating the anonymous users from the revealed users was essential. I decided it was best to create separate pages using a tab switch which users can intuitively slide back and forth to differentiate between who’s anonymous and who’s been revealed.",
 
   img9: '/turtle/img9.png',
   header9: "Someone messaging me vs me messaging someone",
-  text9: "When I’m the first to initiate a conversation with someone else, their profile picture will appear as normal like any messaging app would. If someone else were the first to initiate the conversation with me, their profile would be a rounded square with an randomly generate background color and emoji. The rounded square is to prevent users from creating their own animal and trying to trick others into thinking that they’re still anonymous.",
+  text9: "When I’m the first to initiate a conversation with someone else, their profile picture will appear as usual as any messaging app would. If someone else were the first to begin the conversation with me, the user profile would be a rounded square with a randomly generated background color and emoji. The rounded square is to prevent users from creating their animal and trying to trick others into thinking that they’re still anonymous.",
 
   img10: '/turtle/img10.png',
   header10: "Messaging page",
   text10: "The messaging pages of Turtle are very similar to the architecture of any typical messaging app. With Turtle, I added the timer to the top right of the page so users can easy toggle it and view how much time is left until anonymous is revealed. Additionally, I added a pill shaped container in top center to display the recipient’s name. That pill can be toggled to view their profile.",
 
   img11: '/turtle/img11.png',
-  header11: "Mitigating the feeling of stranger danger",
-  text11: "Another problem I saw amongst most anonymous apps was the lack of motivation to interact with anonymous users. An “anonymous” user on an app such as YikYak or AskFM could be a total stranger which can be demotivating to interact with. To avoid that feeling, I decided to come up with a hinting system. The concept was quite simple, users would be able to unlock hints about their anonymous messenger. My team and I decided to test this concept by simply having a single button that would display a hint when it was toggled.",
+  header11: "Avoiding the feeling of stranger danger",
+  text11: "Another problem I saw amongst most anonymous apps was the lack of motivation to interact with anonymous users. An “anonymous” user on an app such as YikYak or AskFM could be a total stranger which can be demotivating to interact with. To avoid that feeling, I decided to come up with a hinting system. The concept was quite simple; users would be able to unlock hints about their anonymous messenger. My team and I decided to test this concept by merely having a single button that would display a clue when it was toggled.",
 
   img12: '/turtle/img12.png',
   header12: "Another iteration of anonymous hints",
@@ -131,23 +131,23 @@ const turtle = {
   text14: "After completing the designs for the main screens and features, I decided to ship the designs to my talented CTO and development team to develop a rough build of the app so I could test how the app would actually feel like in actuality instead of theory. I used Invision to manage back and forth communication between my team and I. Since the entire team is remote, communication was very vital. I would sometimes record facetime videos explaining certain elements of the app so that my team could replay it whenever they needed clarification on something.",
 
   header15: "My thoughts from testing the initial builds",
-  text15: "It felt very fulfilling to be able to test an early build of the app. Although it was very early on, the app felt very refined due to the amazing work of my CTO and talented team of developers. Something I wanted to test heavily was the gestures and navigation movements. I wanted to make sure that there wasn’t any friction when it came to gestures and switching between pages.",
+  text15: "It felt very fulfilling to be able to test an early build of the app. Although it was very early on, the app felt very refined due to the fantastic work of my CTO and talented team of developers. Something I wanted to test heavily was the gestures and navigation movements. I wanted to make sure that there wasn’t any friction when it came to gestures and switching between pages.",
 
   img16: '/turtle/img16.png',
   header16: "Seamless onboarding flow",
-  text16: "I wanted Turtle’s onboarding to feel as painless as possible. That meant eliminating email code confirmations and very condensed pages asking for user’s information all at once. I decided to display 1 request per page to make it frictionless and digestible as possible.",
+  text16: "I wanted Turtle’s onboarding to feel as painless as possible. That meant eliminating email code confirmations and very dense pages asking for user’s information all at once. I decided to display 1 request per page to make it frictionless and digestible as possible.",
 
   img17: '/turtle/img17.png',
   header17: "Distributing the app privately to early testers",
-  text17: "After thoroughly testing more builds of the app, my team and I decided it was time to distribute a build of the app to beta testers. We obtained over 500 sign ups to test the beta, most of the users were college and high school students within the Virginia area. We had set up a dispatch system within the app to collect user feedbacks and suggestions for new features.",
+  text17: "After thoroughly testing more builds of the app, my team and I decided it was time to distribute a build of the app to beta testers. We obtained over 500 signups to test the beta, most of the users were college and high school students within the Virginia area. We had set up a dispatch system within the app to collect user feedback and suggestions for new features.",
 
   img18: '/turtle/img18.png',
   header18: "Iterating the app based on initial feedbacks from testers",
-  text18: "The beta testing stage of Turtle was very successful. It opened up a lot of ideas for my team. We received a lot of feedback that we were able to iterate and improve on. A common complaint we saw was that users were struggling to find who to message on the app. Additionally, users were also requesting that they’d have more options for their personal profiles.",
+  text18: "The beta testing stage of Turtle was very successful. It opened up a lot of ideas for my team. We received a lot of feedback that we were able to iterate and improve on. A common complaint we saw was that users were struggling to find who to message on the app. Additionally, users were also requesting that they’d have more options for their profiles.",
   
   img19: '/turtle/img19.png',
   header19: "User photos",
-  text19: "One of the features we implemented after beta testing was user photos. Many users wanted a simple way to upload photos to their profiles so that more users would be more incentivised to message them. Since photos aren’t the main focus of Turtle, I decided to go with a simple 4 by 4 photo grid as shown above.",
+  text19: "One of the features we implemented after beta testing was user photos. Many users wanted a simple way to upload pictures to their profiles so that more users would be more incentivized to message them. Since photos aren’t the primary focus of Turtle, I decided to go with a simple four by four photo grid as shown above.",
 
   img20: '/turtle/img20.png',
   header20: "Experimenting with profile links",
@@ -211,7 +211,7 @@ const fleet = {
   header: "/fleet/header.png",
   projectName: "Fleet",
   title: "Lead Designer",
-  date: "October 2016",
+  date: "September 2016",
   description: "Fleet is an iOS app that brings together car enthusiasts. The app helps car lovers find upcoming local and global car events and car shows. The product went through various iterations over the time it was developed, but the core vision always stayed the same. As the Lead Designer, I was responsible for all UI, UX, prototyping, branding and art direction. I was also expected to assist with research and pitching new features to bring to the app.",
 
   img2: "/fleet/img2.png",
@@ -303,7 +303,7 @@ const starklabs = {
 
   img1: "/starklabs/img1.png",
   header1: "Home page",
-  text1: "My goal for the home page was to display content in an architecture that would be digestible. I wanted to avoid including content that would ultimately cause decision fatigue and confusion. I wanted to make everything straight to the point to increase engagements and conversions. We went through several iterations to test what layout converted the most and the one above is the final one that showed the most promising results. I had the pleasure of working on the artwork with Rafael Medina. Our goal our illustrations was to be able to tell a story, while being able to sell the service it provides. ",
+  text1: "My goal for the home page was to display content in an architecture that would be digestible. I wanted to avoid including content that would ultimately cause decision fatigue and confusion. I wanted to make everything straight to the point to increase engagements and conversions. Rafael and I went through several iterations to test what layout converted the most and the one above is the final one that showed the most promising results. I had the pleasure of working on the artwork with Rafael Medina. Our goal our illustrations was to be able to tell a story, while being able to sell the service it provides.",
 
   img2: "/starklabs/img2.png",
   header2: "Requesting services",
@@ -311,7 +311,7 @@ const starklabs = {
 
   img3: "/starklabs/img3.png",
   header3: "Illustrations and artwork",
-  text3: "For the illustrations, we looked at the branding of related apps such as Slack, Intercom, and Trello for inspiration. After all, Stark Lab’s focus is to build bots which are complementary to those apps. Throughout collaboration with Rafael, I would hand draw my ideas on paper and then he would design them out in Illustrator. Stark Labs’ goal is to create messaging bots to help businesses interact with their customers, which is why the illustrations of the robot you see are all expressing positive interactions.",
+  text3: "For the illustrations, Rafael and I looked at the branding of related apps such as Slack, Intercom, and Trello for inspiration. After all, Stark Lab’s focus is to build bots which are complementary to those apps. Throughout collaboration with Rafael, I would hand draw my ideas on paper and then he would design them out in Illustrator. Stark Labs’ goal is to create messaging bots to help businesses interact with their customers, which is why the illustrations of the robot you see are all expressing positive interactions.",
 
 }
 
@@ -320,43 +320,43 @@ const stories = {
   projectName: "Stories",
   title: "Side Project",
   date: "September 2016",
-  description: "Passion for experience design, with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Very positive attitude with an empathetic and holistic view.",
+  description: "Stories is a side project that I came up with during a Hackathon here in the Washington, D.C. area. Stories is an iOS application that takes full screen horizontal videos from Youtube and displays it on your phone vertically without having you to rotate it to watch view the landscape angle. The goal of the project was to change the way video viewing experience is on mobile devices.",
 
   img1: "/stories/img1.png",
   header1: "The idea",
-  text1: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text1: "I came up with this idea because I believe vertical videos is where the trend is heading in terms of how people are viewing video on the go. I personally love what Snapchat did with viewing video on mobile, I wanted to take that experience further by taking Youtube videos and displaying it in the same visual architecture  as Snapchat vertical videos.",
 
   img2: "/stories/img2.png",
   header2: "Utilizing the gyroscope",
-  text2: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text2: "Displaying full screen horizontal videos on a vertical device comes with great compromise of the aspect ratio. The solution I came up with to fix this problem was to use the built in gyroscope to move the video left and right if the user chooses to view the other angles of the video.",
 
   img3: "/stories/img3.png",
   header3: "Depicting gyroscope movement",
-  text3: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text3: "If you look at the bottom of the screens above, you will notice 3 different phone angles being visually displayed with gradients. I came up with a gyroscope gauge to track what angle of the phone the user is tilted towards. I came up with that visual depiction because that’s the primary movement users would rotate by when turn their phone left and right.",
 
   video4: "//player.vimeo.com/video/272580212?color=05E5DD&title=0&byline=0&portrait=0",
   header4: "Developing a rough concept",
-  text4: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text4: "While I was designing the app, one of the developers on my team decided to test the theory by developing a simple prototype to see how the gyroscope would feel like in actuality. Instead of using video, we decided to use a landscaped photo for testing.",
 
   img5: "/stories/img5.png",
   header5: "Adding more content information and options",
-  text5: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text5: "I went ahead and added a text container to the bottom of the screen to display the video’s title. I also added a like button on the bottom right to allow users the ability to save the video. I chose to play the like button on the bottom right to accommodate easy and instant gestures.",
 
   img6: "/stories/img6.png",
   header6: "Visual overhaul",
-  text6: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text6: "At this point, the app was lacking characteristics in terms of the visuals. I went ahead and added a tab switcher at the bottom to allow users the ability to access their saved video. I also chose to remove the gyroscope gauge to accommodate space for video details and like option. The colors for the home page and saved tab were also added to give the app more sense of branding.",
 
   img7: "/stories/img7.png",
   header7: "Dominant color exploration",
-  text7: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text7: "I experimented with the idea of having the navbar and gradients change adaptively based on the dominant colors in the video. The goal of this was to give more visual characteristics to each video viewed. Ultimately, this idea was abandoned due to performance issue concerns from my team.",
 
   img8: "/stories/img8.png",
-  header8: "Adding share option",
-  text8: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  header8: "Adding a share option",
+  text8: "Being a video app, it made sense to allow users the ability to share videos. I included the share option on the top right and moved the like button below it so the interactables would be contained in one area. I also removed the circular video progress bar and made it a line progress bar on the top as well since videos can be as long as 1 or 4 minutes.",
 
   img9: "/stories/img9.png",
   header9: "Simple playback controls",
-  text9: "Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography. Anonymous apps have been around for a long time with focus on building functional and usable products Doing research, value propositions and information structure Strong eye for clean, pixel perfect design and a relentless attention to detail Sketching, creating wireframes, prototyping, storytelling Usability testing, identifying red routes and card sorting Strong sense of design theory and typography.",
+  text9: "The playback controls for the app were adapted from Instagram and Snapchat stories. I wanted the gestures to be similar to the gesture patterns of apps most people were accommodated with in terms of mobile video such as Youtube, Snapchat, and Instagram stories.",
 
   video10: "//player.vimeo.com/video/272580172?color=05E5DD&title=0&byline=0&portrait=0",
   header10: "Thoughts from testing a rough build",

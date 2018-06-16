@@ -35,30 +35,39 @@ class About extends Component {
         transitionAppear={true}
         transitionAppearTimeout={1000}
       >
-      <Header>Bio</Header>
+        <Header>Bio</Header>
         <div className="container projectPage">
           <div className="spacer"></div>
-          <div className="about2">
-            <section className="about">
-              <h1>About</h1>
-              <LongText>{about.summary}</LongText>
-            </section>
+
+          <section className="about">
             <div className="aboutImage">
-              <img src={about.mainImg} align="right" />
+              <img className="" src={about.mainImg} alt="avatar" />
             </div>
-          </div>
+            <div className="spacer"></div>
+            <div class="intro">
+            <LongText>My name is Povchhadarith Sarath, but I go by Nick. I am a Product Designer currently based in the Washington, D.C. area. I’ve over three years of experience within many areas in design, including UI/UX, motion design, branding and art direction. I believe I can make an impact on people’s lives with my digital craftsmanship and innovating thinking. Nothing is more fulfilling to me than the ability to deliver beautifully built digital products and solutions to people on a global scale. To learn more about my work, please view the <a className="aboutLink" href ="/">project page</a> or view my <a className="aboutLink" href="/resume.pdf">resume</a>.</LongText>
+            </div>
+          </section>
+
           <hr className="hr2" />
           <section className="about">
-            <h1>Passion</h1>
-            <LongText>{about.passion}</LongText>
+            <h1>My start</h1>
+            <LongText>{about.myStart}</LongText>
           </section>
           <hr className="hr2" />
+          <section className="about">
+            <h1>Details matter</h1>
+            <LongText>{about.details}</LongText>
+          </section>
+          <hr className="hr2" />
+
           <section className="about">
             <h1>Friends, Mentors, Investors</h1>
             <LongText>{about.friends}</LongText>
             <ImageGrid />
           </section>
           <hr className="hr2" />
+          <div className="spacer2"></div>
         </div>
       </ReactCSSTransitionGroup>
     );
@@ -83,20 +92,20 @@ class App extends Component {
             <section className="about">
               <Tag color="#1d8cff">ABOUT</Tag>
               <h2>Povchhadarith Sarath</h2>
-              <LongText>{summary}</LongText>
+              <LongText>{summary} </LongText> {/* <Link url="/About">Learn More</Link> */}
               <hr />
             </section>
             <section className="projects">
-              <Tag color="#b5c7c7">WORK & PROJECTS</Tag>
+              <Tag color="#b5c7c7">SHOWCASED WORK & PROJECTS</Tag>
               <div className="spacer"></div>
               {projects.map((project) =>
-                <Project project={project}/>
+                <Project project={project} />
               )}
               <div class="spacer2" />
             </section>
             <section className="mentions">
               <Tag color="#f7b021">NOTABLE MENTIONS</Tag>
-              <Mention><em>Lead a team of 6</em> very talented people for over a year.</Mention>
+              <Mention><em>Led a team of 6</em> very talented people for over a year.</Mention>
               <Mention><em>Obtained over 4,000</em> users within 3 days without spending money on marketing.</Mention>
               <Mention><em>Top 100 Charts</em> on the social network category of the App Store.</Mention>
               <Mention><em>Over 100</em> ratings and reviews on the <a href="//itunes.apple.com/us/app/turtle-chat-anonymously/id1313518475?mt=8">App Store.</a></Mention>
@@ -112,22 +121,22 @@ class App extends Component {
                 <div className="row2">
                   <div className="col-sm-3">
                     <a href="//dribbble.com/nicksarath"><p>Dribbble</p></a>
-                </div>
+                  </div>
                   <div className="col-sm-3">
-                   <a href="//www.youtube.com/channel/UCA779NyWpALxp3Lh_2rOHiw"><p>YouTube</p></a>
-                </div>
+                    <a href="//www.youtube.com/channel/UCA779NyWpALxp3Lh_2rOHiw"><p>YouTube</p></a>
+                  </div>
                   <div className="col-sm-3">
                     <a href="//twitter.com/_nicksarath"><p>Twitter</p></a>
-                </div>
+                  </div>
                   <div className="col-sm-3">
                     <a href="//www.instagram.com/nicksarath"><p>Instagram</p></a>
-                </div>
+                  </div>
                 </div>
               </div>
               <div className="email">
-                  <p className="emailSub">Email me at</p>
-                  <p className="actualEmail">nick@turtle.lol</p>
-                </div>
+                <p className="emailSub">Email me at</p>
+                <p className="actualEmail">nick@turtle.lol</p>
+              </div>
             </section>
             <div className="spacer"></div>
           </ReactCSSTransitionGroup>
@@ -140,18 +149,20 @@ class App extends Component {
 
 
 const ImageGrid = ({ }) =>
-  <div className="row1">
-    <div className="column">
-      <img src={about.img1} />
-      <img src={about.img4} />
-    </div>
-    <div className="column">
-      <img src={about.img2} />
-      <img src={about.img5} />
-    </div>
-    <div className="column">
-      <img src={about.img3} />
-      <img src={about.img6} />
+  <div className="gridContainer">
+    <div className="row1">
+      <div className="column">
+        <img src={about.img1} />
+        <img src={about.img4} />
+      </div>
+      <div className="column">
+        <img src={about.img2} />
+        <img src={about.img5} />
+      </div>
+      <div className="column">
+        <img src={about.img3} />
+        <img src={about.img6} />
+      </div>
     </div>
   </div>
 
@@ -183,7 +194,7 @@ const Link = ({ url, children }) =>
   </a>
 
 
-const PreviewImages = ({ img1, img2, url }) => {
+const PreviewImages = ({ img1, img2, url, className }) => {
   let mainImg = {
     height: '192px',
     left: '0px',
@@ -195,7 +206,7 @@ const PreviewImages = ({ img1, img2, url }) => {
     boxShadow: "0 2px 14px 0 rgba(0, 0, 0, 0.13)",
   }
   return (
-    <div className="previewImages grow">
+    <div className={className}>
       <a href={url}>
         <img id="mainImg" style={mainImg} src={img1} />
       </a>
@@ -207,7 +218,7 @@ const Project = ({ project }) =>
   <div>
     <div className="projectBlock">
       <div className="project">
-        <PreviewImages img1={project.img1} img2={project.img2} url={project.url ? project.url : "#"} />
+        <PreviewImages className={ project.url ? "previewImages grow" : "previewImages comingSoon" } img1={project.img1} img2={project.img2} url={project.url ? project.url : "#"} />
         <div className="description">
           <h1 className="projectTitle">{project.title}</h1>
           <p className="projectDesc">{project.description}</p>

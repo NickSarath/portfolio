@@ -86,7 +86,7 @@ body {
 #largeTitle {
   font-size: 35px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .tag {
@@ -168,6 +168,10 @@ hr {
   display: inline-block;
 }
 
+#bold {
+  font-weight: 900;
+}
+
 .link {
   font-family: Inconsolata;
   font-weight: bold;
@@ -225,7 +229,7 @@ hr {
   color: inherit;
 }
 
-.mention a {
+.mention a, .aboutLink {
   color: inherit;
   border-bottom: 1px solid;
 }
@@ -253,6 +257,10 @@ hr {
 .grow { 
   transition: all .24s cubic-bezier(0,.5,.51,1); }
 .grow:hover { transform: scale(1.02); }
+
+.comingSoon a {
+  cursor: default;
+}
 
 .social {
   bottom: 0;
@@ -292,6 +300,11 @@ hr {
   flex-wrap: wrap;
   padding: 0 4px;
   margin-top: 30px;
+}
+
+.gridContainer {
+  height: 300px;
+  display: block;
 }
 
 .email {
@@ -351,22 +364,17 @@ hr {
 
 /* About */
 
-.about2 {
-  display: inline-block;
+.aboutImage {
+  width: 100%;
 }
 
-.about2 .about {
-  max-width: 50%;
-  float: left;
-}
-
-.about2 aboutImage {
-  float: right;
-  min-width: 30%;
-}
-
-.about2 .aboutImage img {
-  margin-top: 60px;
+.aboutImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .twemoji {
@@ -374,7 +382,7 @@ hr {
 }
 
 .backNav {
-  float: left;
+  display: inline-block;
   margin-bottom: 103px;
   transition: all .6s cubic-bezier(0,.5,.51,1);
   padding: 5px;
@@ -531,14 +539,10 @@ hr {
     max-width: 90%;
   }
 
-  .aboutImage img {
-    width: 100%;
+  .backNav {
+    margin-left: -5px;
   }
 
-  .about2 .about {
-    max-width: 100%;
-    float: left;
-  }
 
   .socialLinks {
     width: 50%;
@@ -578,7 +582,6 @@ hr {
 
 .lessWide2 {
   width: 60%;
-  margin-left: 8%;
 }
 
 

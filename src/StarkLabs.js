@@ -26,6 +26,8 @@ const StarkLabs = () =>
         <h2 id="largeTitle">{starklabs.projectName}</h2>
         <h3>{starklabs.title}</h3>
         <LongText bold>{starklabs.date}</LongText>
+        <div className="newLine"/>
+        <LongText bold>Product Strategy, UI UX Design, Branding & Visual Identity</LongText>
         <div className="spacer0"></div>
         <LongText>{starklabs.description}</LongText>
         <div className="spacer0"></div>

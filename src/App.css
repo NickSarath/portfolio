@@ -82,6 +82,10 @@ body {
   color: #16191a;
 }
 
+.newLine {
+  margin-bottom: 17px;
+}
+
 
 #largeTitle {
   font-size: 35px;

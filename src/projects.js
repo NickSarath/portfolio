@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "PhoneWagon",
-    description: "Product Designer, 2016, PhoneWagon Inc",
+    description: "Side Project, 2017",
     img1: "/phonewagon.png",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "MyArena",
-    description: "Leader Designer, 2015, MyArena LLC",
+    description: "Lead Designer, 2015, MyArena LLC",
     img1: "/myarena.png",
   },
 ]

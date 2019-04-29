@@ -92,7 +92,9 @@ class App extends Component {
             <section className="about">
               <Tag color="#1d8cff">ABOUT</Tag>
               <h2>Povchhadarith Sarath</h2>
-              <LongText>{summary} </LongText> {/* <Link url="/About">Learn More</Link> */}
+              <LongText>{summary} </LongText>
+              <Link url="/About">Learn More</Link>
+               {/* <Link url="/About">Learn More</Link> */}
               <hr />
             </section>
             <section className="projects">
@@ -105,6 +107,7 @@ class App extends Component {
             </section>
             <section className="mentions">
               <Tag color="#f7b021">NOTABLE MENTIONS</Tag>
+              <Mention><em>Featured on New Apps We Love</em> of the App Store</Mention>
               <Mention><em>Led a team of 6</em> very talented people for over a year.</Mention>
               <Mention><em>Obtained over 4,000</em> users within 3 days without spending money on marketing.</Mention>
               <Mention><em>Top 100 Charts</em> on the social network category of the App Store.</Mention>
@@ -126,10 +129,10 @@ class App extends Component {
                     <a href="//www.youtube.com/channel/UCA779NyWpALxp3Lh_2rOHiw"><p>YouTube</p></a>
                   </div>
                   <div className="col-sm-3">
-                    <a href="//twitter.com/_nicksarath"><p>Twitter</p></a>
+                    <a href="//www.linkedin.com/in/sarath458/"><p>LinkedIn</p></a>
                   </div>
                   <div className="col-sm-3">
-                    <a href="//www.instagram.com/nicksarath"><p>Instagram</p></a>
+                    <a href="//twitter.com/_nicksarath"><p>Twitter</p></a>
                   </div>
                 </div>
               </div>

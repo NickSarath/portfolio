@@ -8,6 +8,8 @@ import Video from './Video';
 import Profile from './Profile';
 import Header from './Header';
 
+import './CaseStyles/Turtle.css'
+
 const Turtle = () =>
   <ReactCSSTransitionGroup
     transitionName="bt"
@@ -25,7 +27,9 @@ const Turtle = () =>
 
         <h2 id="largeTitle">{turtle.projectName}</h2>
         <h3>{turtle.title}</h3>
-        <LongText bold>{turtle.date}</LongText>
+        <LongText bold>{turtle.date}</LongText><br/>
+        <div className="newLine"/>
+        <LongText bold>Product Strategy, UI UX Design, Branding & Visual Identity</LongText>
         <div className="spacer0"></div>
         <LongText>{turtle.description}</LongText>
         <div className="spacer0"></div>
@@ -35,7 +39,7 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* New Approach*/}
-        <img src={turtle.img1} className="appImage shadow" />
+        <img id="img1" src={turtle.img1} className="appImage shadow" />
         <div className="spacer"></div>
         <h1>{turtle.header1}</h1>
         <LongText>{turtle.text1}</LongText>
@@ -44,7 +48,7 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* Existing Apps */}
-        <img src={turtle.img2} className="appImage extraWide" />
+        <img id="img2" src={turtle.img2} className="appImage extraWide" />
         <div className="spacer"></div>
         <h1>{turtle.header2}</h1>
         <LongText>{turtle.text2}</LongText>
@@ -54,46 +58,46 @@ const Turtle = () =>
 
         {/* What a typical anonymous app feels like */}
         <h1 id="red">{turtle.header3}</h1>
-        <img src={turtle.img3} className="appImage" />
+        <img id="img3" src={turtle.img3} className="appImage" />
         <div className="spacer"></div>
 
         {/* What Turtle feels like */}
         <h1 id="blue">{turtle.header4}</h1>
-        <img src={turtle.img4} className="appImage" />
+        <img id="img4" src={turtle.img4} className="appImage" />
         <div className="spacer"></div>
         <hr className="hr3" />
         <div className="spacer"></div>
 
         {/* First Look */}
-        <img src={turtle.img4_5} className="appImage shadow" />
+        <img id="img4_5" src={turtle.img4_5} className="appImage shadow" />
         <div className="spacer"></div>
         <h1>{turtle.header4_5}</h1>
         <LongText>{turtle.text4_5}</LongText>
         <div className="spacer"></div>
 
         {/* Use of Playful */}
-        <img src={turtle.img5} className="appImage lessWide shadow" />
+        <img id="img5" src={turtle.img5} className="appImage lessWide shadow" />
         <div className="spacer"></div>
         <h1>{turtle.header5}</h1>
         <LongText>{turtle.text5}</LongText>
         <div className="spacer"></div>
 
         {/* Connecting w/ */}
-        <img src={turtle.img6} className="appImage" />
+        <img id="img6" src={turtle.img6} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header6}</h1>
         <LongText>{turtle.text6}</LongText>
         <div className="spacer"></div>
 
         {/* Establishing */}
-        <img src={turtle.img7} className="appImage" />
+        <img id="img7" src={turtle.img7} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header7}</h1>
         <LongText>{turtle.text7}</LongText>
         <div className="spacer"></div>
 
         {/* ✨ */}
-        <img src={turtle.img8_1} className="appImage lessWide" />
+        <img id="img8_1" src={turtle.img8_1} className="appImage lessWide" />
         <div className="spacer"></div>
         <img src={turtle.img8_2} className="appImage" />
         <div className="spacer"></div>
@@ -102,44 +106,44 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* Someone */}
-        <img src={turtle.img9} className="appImage" />
+        <img id="img9" src={turtle.img9} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header9.substr(0, 24)}<span className="italic">{turtle.header9.substr(24)}</span></h1>
         <LongText>{turtle.text9}</LongText>
         <div className="spacer"></div>
 
         {/* Messaging */}
-        <img src={turtle.img10} className="appImage" />
+        <img id="img10" src={turtle.img10} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header10}</h1>
         <LongText>{turtle.text10}</LongText>
         <div className="spacer"></div>
 
         {/* Mitigating */}
-        <img src={turtle.img11} className="appImage" />
+        <img id="img11" src={turtle.img11} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header11}</h1>
         <LongText>{turtle.text11}</LongText>
         <div className="spacer"></div>
 
         {/* Another */}
-        <img src={turtle.img12} className="appImage" />
+        <img id="img12" src={turtle.img12} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header12}</h1>
         <LongText>{turtle.text12}</LongText>
         <div className="spacer"></div>
 
         {/* A Sense */}
-        <img src={turtle.img13} className="appImage" />
+        <img id="img13" src={turtle.img13} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header13}</h1>
         <LongText>{turtle.text13}</LongText>
         <div className="spacer"></div>
 
         {/* Moving */}
-        <img src={turtle.img14_1} className="appImage" />
+        <img id="img14_1" src={turtle.img14_1} className="appImage" />
         <div className="spacer"></div>
-        <img src={turtle.img14_2} className="appImage" />
+        <img id="img14_2" src={turtle.img14_2} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header14}</h1>
         <LongText>{turtle.text14}</LongText>
@@ -153,49 +157,49 @@ const Turtle = () =>
         <div className="spacer"></div>
 
         {/* Seamless */}
-        <img src={turtle.img16} className="appImage" />
+        <img id="img16" src={turtle.img16} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header16}</h1>
         <LongText>{turtle.text16}</LongText>
         <div className="spacer"></div>
 
         {/* Distributing */}
-        <img src={turtle.img17} className="appImage" />
+        <img id="img17" src={turtle.img17} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header17}</h1>
         <LongText>{turtle.text17}</LongText>
         <div className="spacer"></div>
 
         {/* Iterating */}
-        <img src={turtle.img18} className="appImage lessWide2" />
+        <img id="img18" src={turtle.img18} className="appImage lessWide2" />
         <div className="spacer"></div>
         <h1>{turtle.header18}</h1>
         <LongText>{turtle.text18}</LongText>
         <div className="spacer2"></div>
 
         {/* User Photos */}
-        <img src={turtle.img19} className="appImage" />
+        <img id="img19" src={turtle.img19} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header19}</h1>
         <LongText>{turtle.text19}</LongText>
         <div className="spacer"></div>
 
         {/* Experimenting */}
-        <img src={turtle.img20} className="appImage" />
+        <img id="img20" src={turtle.img20} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header20}</h1>
         <LongText>{turtle.text20}</LongText>
         <div className="spacer"></div>
 
         {/* Days */}
-        <img src={turtle.img21} className="appImage" />
+        <img id="img21" src={turtle.img21} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header21}</h1>
         <LongText>{turtle.text21}</LongText>
         <div className="spacer"></div>
 
         {/* Overall Experience */}
-        <img src={turtle.img22} className="appImage" />
+        <img id="img22" src={turtle.img22} className="appImage" />
         <div className="spacer"></div>
         <h1>{turtle.header22}</h1>
         <LongText>{turtle.text22}</LongText>
